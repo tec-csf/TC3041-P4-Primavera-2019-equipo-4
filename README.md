@@ -9,3 +9,11 @@ Para solucionar el problema dividimos los datos en 3 tipos:
   - Energia utilizada
   - Temperatura de habitación
   
+##  Descripción de los valores
+Los valores que se decidieron utilizar son unicamente las medidas tomadas de cada uno de los sensores de temperatura y energia:
+Se está midiendo actualmente:
+  - Energia (Kw)
+  - Temperatura (°C)
+  
+##  Descripción de las etiquetas
+Las etiquetas utilizadas corresponden a los diferentes generadores eléctricos para la toma de energia generada, la energia consumida salida de cada uno de los generadores para la energia utilizada. Las etiquetas utilizadas para la temperatura corresponden a cada uno de los cuartos de la casa del usuario
