@@ -1,0 +1,19 @@
+//Inicializar influxdb en docker
+
+docker run --name influxdb -d -p 8086:8086 -v $PWD:/var/lib/influxdb influxdb
+
+//Copiar el archivo de datos al docker de influx
+
+docker cp practica4_data.txt influxdb:/
+
+//Acceder a la terminal de influxdb
+
+docker exec -it influxdb bash
+
+//Importar los datos a la base de datos
+
+influx -import -path=practica4_data.txt -precision=s
+
+//Acceder a la base de datos
+
+influx
